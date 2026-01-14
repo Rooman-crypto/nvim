@@ -1,0 +1,2 @@
+:set nornu -- relative numbers off
+:Set rnu -- relative numbers on
