@@ -1,0 +1,8 @@
+:set nornu -- relative numbers off
+:Set rnu -- relative numbers on
+"mini.surround setup"
+  mappings = {
+    add = "gs",        -- instead of sa
+    delete = "gD",
+    replace = "gR",
+    highlight = "gH"

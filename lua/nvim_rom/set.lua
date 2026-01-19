@@ -19,6 +19,7 @@ vim.opt.number = true            -- show absolute line numbers
 vim.opt.relativenumber = true    -- relative numbers (very useful for motions)
 vim.opt.cursorline = true        -- highlight current line
 vim.opt.signcolumn = "yes:1"     -- always show sign column with width 1
+vim.diagnostic.config({ virtual_text = false })
                                  -- (prevents annoying jumping when signs appear/disappear)
 vim.opt.scrolloff = 8            -- keep at least 8 lines above/below cursor when scrolling
 vim.opt.showcmd = true           -- show (partial) command in bottom line (e.g. 3d, y2w)
@@ -47,6 +48,8 @@ vim.opt.showmode = false         -- show/hide -- INSERT -- / -- VISUAL -- etc
 vim.opt.background = "dark" -- set this to dark or light
 vim.cmd("colorscheme oxocarbon")-- ANNOYING AUTO-COMMENTS PREVENTION
 
+-- Better Diagnostic virtual text
+--
 vim.cmd([[autocmd FileType * set formatoptions-=ro]])
 -- removes 'r' and 'o' flags from formatoptions
 --   r = auto-insert comment leader on next line when pressing <Enter>
